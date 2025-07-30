@@ -34,7 +34,9 @@ CSS3 (custom styling with gradients and hover animations)
 Data is fetched from OpenWeatherMap using a free API key.
 
 **📸 UI Preview**
-(You can upload a screenshot in the GitHub repo README here if desired.)
+![Uploading image.png…]()
+
+
 
 **📦 How to Run Locally**
 cd weather-app-react
