@@ -1,0 +1,160 @@
+/* Reset & body */
+body, html {
+  margin: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+
+}
+
+/* Dark overlay card */
+.app {
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.overlay {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Big temperature text */
+.temp-big {
+  font-size: 5rem;
+  margin-top: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.right-panel h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+/* 🔍 Search box & button */
+.search-box {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+.search-box input {
+  padding: 12px 15px;
+  height: 48px;
+  flex: 1;
+  font-size: 1rem;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.search-box input:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.search-box button {
+  height: 48px;
+  padding: 0 20px;
+  border: none;
+  background-color: #1e90ff;
+  color: white;
+  font-weight: bold;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.search-box button:hover {
+  background-color: #0f7ae5;
+  transform: scale(1.05);
+}
+
+/* Info Section */
+.info {
+  text-align: left;
+  margin-top: 20px;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.info p {
+  margin: 8px 0;
+  font-size: 1.1rem;
+}
+
+/* Clock */
+.clock {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  color: #ddd;
+}
+
+/* Buttons Below Clock */
+.action-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.action-buttons button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff22;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #ffffff44;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .temp-big {
+    font-size: 4rem;
+  }
+
+  .right-panel h2 {
+    font-size: 1.6rem;
+  }
+}
