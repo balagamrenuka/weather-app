@@ -37,8 +37,6 @@ Data is fetched from OpenWeatherMap using a free API key.
 (You can upload a screenshot in the GitHub repo README here if desired.)
 
 **📦 How to Run Locally**
-
-git clone https://github.com/your-username/weather-app-react.git
 cd weather-app-react
 npm install
 npm start
